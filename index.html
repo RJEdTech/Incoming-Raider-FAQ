@@ -93,14 +93,11 @@ html[data-theme="dark"] .theme-toggle .icon-moon{display:none}
 .ti-original summary{cursor:pointer;font-weight:700;color:var(--red-deep);margin-bottom:8px}
 
 /* ---------- crisis ---------- */
-.crisis{margin:0 0 18px;border-radius:12px;overflow:hidden;border:1px solid var(--red);
-  box-shadow:0 6px 18px rgba(193,20,48,.16)}
+.crisis{margin:0 0 18px;border-radius:12px;overflow:hidden;border:1px solid var(--line)}
 .crisis-head{display:flex;align-items:center;gap:10px;width:100%;text-align:left;cursor:pointer;
-  background:var(--red);color:#fff;border:0;padding:12px 15px;font-size:.98rem;font-weight:600;
+  background:var(--red-soft);color:var(--red-deep);border:0;padding:11px 15px;font-size:.92rem;font-weight:600;
   font-family:var(--sans)}
-.crisis-head .pulse{width:9px;height:9px;border-radius:50%;background:#fff;flex:none;
-  box-shadow:0 0 0 0 rgba(255,255,255,.7);animation:pulse 2s infinite}
-@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,255,255,.6)}70%{box-shadow:0 0 0 9px rgba(255,255,255,0)}100%{box-shadow:0 0 0 0 rgba(255,255,255,0)}}
+.crisis-head .pulse{width:8px;height:8px;border-radius:50%;background:var(--red);flex:none}
 .crisis-head .chev{margin-left:auto;transition:transform .3s}
 .crisis[open-c] .crisis-head .chev{transform:rotate(180deg)}
 .crisis-body{background:var(--card);max-height:0;overflow:hidden;transition:max-height .4s ease}
