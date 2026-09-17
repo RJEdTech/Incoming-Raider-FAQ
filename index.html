@@ -292,6 +292,17 @@ html[data-theme="dark"] .q .tag{background:var(--red-soft);border-color:transpar
   .topic .tp-name{font-size:.92rem}
 }
 </style>
+<!-- Light/dark follows the operating system setting. Runs before <body>
+     renders, so there is no flash of the wrong theme. No in-page toggle by design. -->
+<script>
+(function(){
+  var mq = window.matchMedia("(prefers-color-scheme: dark)");
+  function apply(){ document.documentElement.setAttribute("data-theme", mq.matches ? "dark" : "light"); }
+  apply();
+  if (mq.addEventListener) mq.addEventListener("change", apply);
+  else if (mq.addListener) mq.addListener(apply);
+})();
+</script>
 </head>
 <body>
 <div class="watermark" aria-hidden="true"></div>
@@ -313,10 +324,6 @@ html[data-theme="dark"] .q .tag{background:var(--red-soft);border-color:transpar
           <option value="ti">ትግርኛ</option>
         </select>
       </div>
-      <button class="icon-btn theme-toggle" id="theme" type="button" aria-label="Toggle dark mode">
-        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      </button>
     </div>
   </header>
 </div>
@@ -937,7 +944,6 @@ function applyLang(L){
   document.title = L==='es' ? 'Gu\u00eda para nuevos Raiders \u2014 Regis Jesuit' : (L==='ti' ? 'ናይ ሓደስቲ Raiders ሕቶታት — Regis Jesuit' : 'Incoming Raider FAQ \u2014 Regis Jesuit');
   document.getElementById('brand').innerHTML = t('brand_a')+'<span class="accent">'+t('brand_b')+'</span>';
   document.getElementById('tagline').textContent = t('tagline');
-  document.getElementById('theme').setAttribute('aria-label', t('theme_aria'));
   const lb=document.getElementById('lang');
   if(lb){
     lb.value=L;
@@ -986,10 +992,6 @@ function applyLang(L){
 document.getElementById('lang').addEventListener('change',(e)=>applyLang(e.target.value));
 
 /* ---------- theme ---------- */
-const themeBtn=document.getElementById('theme');
-function setTheme(d){document.documentElement.setAttribute('data-theme',d?'dark':'light');try{localStorage.setItem('rjfaq-theme',d?'dark':'light')}catch(e){}}
-(function(){let pref=null;try{pref=localStorage.getItem('rjfaq-theme')}catch(e){}setTheme(pref==='dark');})();
-themeBtn.addEventListener('click',()=>setTheme(document.documentElement.getAttribute('data-theme')!=='dark'));
 
 /* ---------- notice dismiss ---------- */
 document.getElementById('noticex').addEventListener('click',()=>{document.getElementById('notice').style.display='none';try{localStorage.setItem('rjfaq-notice','x')}catch(e){}});
