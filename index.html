@@ -323,6 +323,18 @@ body.fs .rj-masthead::before{display:none}
 @media(max-width:600px){.rj-masthead .brand,.rj-masthead h1{font-size:17px!important}.rj-masthead>label{flex-basis:100%}}
 @media print{.rj-masthead::before{display:none}.rj-masthead,.rj-masthead .brand,.rj-masthead h1{color:#000!important;-webkit-text-fill-color:#000!important}}
 /*/RJMASTHEAD*/
+
+/*RJCONTRAST*/
+/* Readability: text colours lifted to WCAG AA contrast (4.5:1) in each theme */
+:where([data-theme="light"]) .site-footer{color:#6d6d6d}
+:where([data-theme="light"]) .site-footer a{color:#6d6d6d}
+:where([data-theme="light"]) .cl-note{color:#6d6d6d}
+:where([data-theme="light"]) .goto .lbl{color:#6d6d6d}
+:where([data-theme="light"]) .src{color:#6d6d6d}
+:where([data-theme="light"]) .sec-head .sub{color:#6d6d6d}
+:where([data-theme="light"]) .topic .tp-blurb{color:#6d6d6d}
+[data-theme="dark"] .rj-lang h2{color:#ed516a}
+/*/RJCONTRAST*/
 </style>
 <!-- Light/dark follows the operating system setting. Runs before <body>
      renders, so there is no flash of the wrong theme. No in-page toggle by design. -->
