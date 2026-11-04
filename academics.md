@@ -76,7 +76,7 @@ For daily grades and assignment feedback, check **Grades** inside Canvas. For yo
 
 ### Q: Where do I find my real GPA?
 
-Your official GPA lives in **My RJ**, not Canvas. Canvas shows daily grades and assignment scores, but it isn't the official source for GPA. Look under your student profile / Performance / transcript area in My RJ; if you can't find it, ask your **school counselor**.
+Your official GPA lives in **My RJ**, not Canvas. Canvas shows daily grades and assignment scores, but it isn't the official source for GPA. In My RJ, click your photo, then **Profile**. The GPA shown there is your cumulative GPA, not a single semester. If you can't find it, ask your **school counselor**.
 
 **Where to go:** [Resource Board](https://regisjesuit.myschoolapp.com/app/student?svcid=edu#resourceboard) → School Counseling
 
@@ -108,7 +108,7 @@ A transcript is your official school record of courses and grades. You don't use
 
 ### Q: What is GPA, and where do I check it?
 
-GPA is a number that summarizes your grades. Your actual GPA comes from **My RJ**, not Canvas. The school uses GPA for academic standing, including academic probation if you earn below a **2.00** at the end of a semester.
+GPA is a number that summarizes your grades. Your actual GPA comes from **My RJ**, not Canvas, and it's cumulative across your semesters. The school uses GPA for academic standing, including academic probation if you earn below a **2.00** at the end of a semester.
 
 **Where to go:** [Resource Board](https://regisjesuit.myschoolapp.com/app/student?svcid=edu#resourceboard) → School Counseling
 
