@@ -98,3 +98,7 @@ No GitHub Actions or build workflow is needed — `index.html` is already built.
   schedules) against My RJ each year and rebuild.
 - **Feedback:** the footer links a Microsoft Form for reporting a problem or suggesting a question.
 - Built and maintained by the Office of Educational Technology.
+
+## License
+
+© 2026 Jason Beyer, RJ Ed Tech. Licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/): free to share and adapt for non-commercial use with credit. See [LICENSE](LICENSE) for what the license does not cover.
